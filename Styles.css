@@ -1,0 +1,392 @@
+/* base css */
+
+html {
+    background-color: #ffffff;
+    /* background-image: linear-gradient(to bottom right, #ffffff, #a3a3a3); */
+    color: rgb(0, 0, 0);
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 100vh;
+    min-width: 300px;
+    overflow-x: hidden;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: currentColor;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: white !important;
+}
+
+.jumbotron {
+    background-color: #e7e7e7 !important;
+}
+
+.about-picture1 {
+    background: url(pic.jpg);
+    /* center/cover no-repeat fixed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: red;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
+
+
+/* MINIMALIST */
+
+.about-picture {
+    background: url(M_hero.png);
+    /* center/cover no-repeat fixed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.link {
+    color: rgb(104, 104, 247);
+    text-decoration: solid;
+}
+
+.hero {
+    margin: -90px !important;
+}
+
+.footer {
+    background: rgb(228, 228, 228);
+    color: black;
+    padding: 20px;
+}
+
+.nav-link:hover {
+    color: rgb(53, 90, 53);
+}
+
+.m_btn {
+    background-color: rgb(223, 222, 222);
+    color: black;
+    padding: 15px;
+    margin: auto;
+    border-radius: 2rem;
+}
+
+.m_btn:hover {
+    background-color: #b3b1b1;
+}
+
+.m_hr {
+    margin: 15px;
+}
+
+.m_p {
+    margin-top: 15px;
+}
+
+#about {
+    background-color: rgb(226, 226, 226);
+    padding: 15px;
+}
+
+
+/* SIMPLE LUXURY */
+
+.carousel-item .img-fluid {
+    width: 100%;
+    height: 100%;
+}
+
+.sl_btn {
+    background-color: white;
+    color: black;
+    border-radius: .5rem;
+    padding: 7px;
+}
+
+#models {
+    background-color: #e7e7e7;
+}
+
+.sl_card:hover {
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    transform: scale(1.01) translateY(-2px);
+    text-decoration: none;
+    background-color: #aaaaaa;
+    color: #000000
+}
+
+.sl_form {
+    background-color: #aaaaaa;
+    padding: 20px;
+    border-radius: 1rem;
+}
+
+.sl_footer {
+    background-color: #525252 !important;
+    padding: 15px;
+}
+
+
+/* PLAYFUL */
+
+.p_jt {
+    background-color: white !important;
+}
+
+.p_abttitle {
+    color: white !important;
+}
+
+.p_abt {
+    background-color: rgb(73, 124, 86) !important;
+    color: white !important;
+}
+
+
+/* shared */
+
+.wallpaper,
+.picture-shadow,
+.picture-image {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+}
+
+.side {
+    max-height: 20rem;
+    max-width: 20rem;
+}
+
+.about {
+    max-width: 26rem;
+}
+
+.job,
+.button {
+    font-family: sans-serif;
+    color: #000000;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+.button,
+.social a {
+    transform-origin: center;
+    transition-duration: 100ms;
+}
+
+
+/* specific */
+
+.wallpaper {
+    background-color: rgb(228, 228, 228);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.2;
+    position: fixed;
+}
+
+.picture {
+    padding-top: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.picture-shadow {
+    border-radius: 27091971px;
+    background-image: radial-gradient(#000 0%, rgba(0, 0, 0, 0) 70%);
+    position: absolute;
+    top: 10%;
+}
+
+.picture-image {
+    border-radius: 290px;
+    position: absolute;
+}
+
+.name {
+    font-size: 2.25rem;
+    line-height: 1.125;
+    margin-bottom: 0.5rem;
+}
+
+.job {
+    color: #000000;
+    font-size: 0.75rem;
+}
+
+.hr {
+    border-color: #525252;
+    content: "";
+    height: 1px;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    transform-origin: center left;
+    width: 8rem;
+    display: inline-block;
+}
+
+.description {
+    font-size: 1.5rem;
+}
+
+.contact {
+    display: inline-block;
+    margin-top: 1.5rem;
+    vertical-align: top;
+}
+
+.button {
+    background-color: rgb(255, 255, 255);
+    border-radius: 27971px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    color: #000000;
+    display: inline-block;
+    font-size: 0.875rem;
+    padding: 1.00rem 2em;
+    text-shadow: none;
+    text-decoration: none;
+    transition-property: box-shadow, transform;
+    user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+}
+
+.button:hover {
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    transform: scale(1.01) translateY(-2px);
+    text-decoration: none;
+    background-color: #aaaaaa;
+    color: #000000
+}
+
+.button:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transform: scale(0.98) translate(-2px);
+}
+
+.navbar a:hover {
+    opacity: 1;
+    transform: scale(1.10);
+}
+
+.social {
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.social li {
+    height: 2rem;
+    margin-right: 0.5rem;
+    text-align: center;
+    width: 2rem;
+}
+
+.social a {
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+    height: 2rem;
+    justify-content: center;
+    opacity: 0.5;
+    transition-property: opacity, transform;
+    width: 2rem;
+    will-change: opacity, transform;
+}
+
+.social a:hover {
+    opacity: 1;
+    transform: scale(1.25);
+    text-decoration: none;
+    color: rgb(122, 122, 122);
+}
+
+.social a:active {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+/* responsiveness */
+
+@media screen and (max-width: 799px) {
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 3rem;
+    }
+    .side {
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .content {
+        align-items: center;
+        justify-content: space-around;
+        justify-content: space-evenly;
+        padding: 4rem;
+    }
+    .side {
+        flex-grow: 0;
+        flex-shrink: 0;
+        height: 20rem;
+        margin-left: 4rem;
+        order: 2;
+        width: 20rem;
+    }
+    .about {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+}
